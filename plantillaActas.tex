@@ -1,8 +1,110 @@
-%% Plantilla de Documentos del Centro Educativo Academia de las Américas %%
+%datos
 
-\documentclass{article}
- 
+
+% \maketitle  %Para imprimir datos
+
+% \textbf{...} 
+% \textit{...}
+% \underline{...}
+% -1 	\part{part}
+% 0 	\chapter{chapter}
+% 1 	\section{section}
+% 2 	\subsection{subsection}
+% 3 	\subsubsection{subsubsection}
+% 4 	\paragraph{paragraph}
+% 5 	\subparagraph{subparagraph}
+%% Plantillas de Actas AA %%
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+ \geometry{
+headheight=30mm,
+voffset=10mm,
+ }
+\usepackage{palatino} %tipo de fuente
+
+%formato de encabezado y píe de página
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+%\rhead{academia.net.co}
+\chead{\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ == & Área: Gestión Directiva & Versión 0.1 \\ 
+ \hline
+ == & Proceso: Consejo Académico & cell6 \\ 
+ \hline
+\end{tabular}
+\end{center}}
+%\lhead{\acta{}}
+
+\rfoot{Página \thepage \hspace{1pt} de \pageref{LastPage}}
+\lfoot{\textit{Carrera 28 No.10-45 - www.academia.net.co}}
+%Se define variable para ser usada en diferentes textos
+% \def \ar {ALEXANDER FABIÁN REDONDO FLÓREZ}
+\def \acta {ACTA No. 08-0118 CONSEJO ACADÉMICO}
+\setlength{\parindent}{0pt}
+
+%% preambulo %%
+\title{\acta{}}
+%\author{alexander.red }
+\date{Sincelejo - 6 de abril 2018}
+
+%% Inicio de documento %%
 \begin{document}
-First document. This is a simple example, with no
-extra parameters or packages included.
+
+\maketitle %impresión title
+
+\textbf{Lugar:} CENTRO EDUCATIVO ACADEMIA DE LAS AMÉRICAS – PUERTA ROJA \\
+\textbf{Certificación de excusas:} Todos los miembros están presentes en la reunión. \\
+\textbf{Medio de comunicación:} Por medio de oficio por parte del Director.\\
+
+\section{Agenda de la Reunión}
+\begin{enumerate}
+  \item Uso de la tecnologías de la información y comunicación en el aula (TIC).
+  \item Cambios del sistema de evaluación institucional.
+  \item Áreas de Baja intensidad, se tomarán tres notas en el periodo.
+\item Planes individuales de ajustes razonables.
+\item Ajustes de los cambios al Proyecto Educativo Institucional.
+\item Política de tareas.
+\item Proyecto Steam y literario.
+\item Inclusión del estudio del Manual de Convivencia en el área de Ética.
+\item Inclusión del Proyecto ICTHUS en el área de Educación Religiosa.
+\item Revisión y aprobación del plan curricular del área de tecnología.
+\item Uso de grupos de whatsapp.
+\end{enumerate}
+
+\section{Desarrollo}
+\subsection{Uso de la tecnologías de la información y comunicación en el aula (TIC).} Se evalúa la intensidad horaria dedicada en las áreas de lengua castellana, matemá-ticas, inglés, ciencias sociales, ciencias naturales y tecnología en el aula de tecnología. El aula está dotada con 28 puestos de trabajos con computadores todo en uno de escritorio con sistema operativo linux ubuntu. \\ Hasta el momento los resultados son satisfactorios. El uso de los recursos tecnológicos aportan al proceso de formación. Las evidencias se corroboran con los comentarios positivos de estudiantes, docentes y padres de familia.
+    \subsection{Cambios del sistema de evaluación institucional.}Se proponen y se analizan los siguientes cambios del sistema de evaluación institucional:
+Para las áreas de baja intensidad se evaluará con medios de aplicación paralelos a las actividades, haciendo énfasis en la observación estructurada. Se tomarán tres notas, una por cada uno de los componentes: cognitivo, actitudinal y procedimental, lo cuales de promedian al final.
+En el área de Ciencias Naturales la tercera nota de cada periodo corresponderá a la evaluación del proyecto STEM.
+En el área de Lengua Castellana la tercera nota de cada periodo corresponderá a la evaluación del foro literario.
+    \subsection{Planes individuales de ajustes razonables.}Evaluación de los Planes Individuales de Ajustes Razonables (PIAR) dentro del Marco de la Educación Inclusiva. De acuerdo al Decreto 1421 de 2017 haciendo énfasis en que la educación inclusiva persigue que todos los niños y niñas, independientemente de sus necesidades educativas, pueden estudiar y aprender juntos. Lo que se busca ahora es que la enseñanza se adapte a los estudiantes y no éstos a la enseñanza.
+    \subsection{Ajustes de los cambios al Proyecto Educativo Institucional.}Se debe actualizar el PEI teniendo en cuenta los principios de la educación inclusiva: calidad: diversidad, pertinencia, participación, equidad e interculturalidad establecidos por la Ley 1618 de 2013. Se tendrán en cuenta los principios de la Convención de los DErechos de las personas con discapacidad de acuerdo a la Ley 1346 de 2009:
+El respeto a la dignidad inherente, la autonomía individual, incluida la libertad de tomar las propias decisiones, y la independencia de las personas.
+La no discriminación.
+La participación e inclusión plenas y efectivas en la sociedad.
+El respeto por la diferencia y la aceptación de las personas con discapacidad como parte de la diversidad y la condición humanas.
+La igualdad de oportunidades.
+La accesibilidad.
+La igualdad entre el hombre y la mujer.
+El respeto a la evolución de las facultades de los niños y las niñas con discapacidad y de su derecho a preservar su identidad.
+Ajuste al PEI. 
+\subsection{Política de tareas.} La tareas o actividades que se envían para la casa se reducen al mínimo necesario teniendo en cuenta que su aporte al proceso no es significativo y los estudiantes cuentan con actividades extracurriculares vespertinas, tales como: escuelas deportivas, arte, entre otras.
+Se diseñarán proyectos STEAM (Science, Technology, Engineering, Art and Mathematica) para reforzar el proceso de formación y estimular el pensamiento lógico y científico de los estudiantes. Las familias apoyan este proyecto.
+Se diseñarán foros de literatura para desarrollarlos en plataforma. Las obras para la lecturas serán clásicas y los foros se centrarán en preguntas literales, inferenciales y críticas.
+
+\subsection{Inclusión del estudio del Manual de Convivencia en el área de Ética.} 
+\subsection{Inclusión del Proyecto ICTHUS en el área de Educación Religiosa.} 
+\subsection{Revisión y aprobación del plan curricular del área de tecnología.} 
+\subsection{Uso de grupos de whatsapp.} 
+
+%% Fin del documento %%
 \end{document}
+
