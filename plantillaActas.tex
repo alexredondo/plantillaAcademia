@@ -1,11 +1,7 @@
-%datos
-
-
-% \maketitle  %Para imprimir datos
-
-% \textbf{...} 
-% \textit{...}
-% \underline{...}
+% \textbf{...} Negrita
+% \textit{...} Cursiva
+% \underline{...} Subrayado
+% Estructura del documento
 % -1 	\part{part}
 % 0 	\chapter{chapter}
 % 1 	\section{section}
@@ -13,57 +9,79 @@
 % 3 	\subsubsection{subsubsection}
 % 4 	\paragraph{paragraph}
 % 5 	\subparagraph{subparagraph}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Plantillas de Actas AA %%
-\documentclass[12pt, letterpaper, twoside]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{geometry}
+\documentclass[12pt, letterpaper]{article} %tipo de documento
+\usepackage[utf8]{inputenc} % tíldes
+\usepackage{geometry} %estructura
  \geometry{
-headheight=30mm,
-voffset=10mm,
+headheight=20mm,
+voffset=5mm,
  }
 \usepackage{palatino} %tipo de fuente
+\usepackage{multirow} %combinar filas
 
 %formato de encabezado y píe de página
-\usepackage{fancyhdr}
-\usepackage{lastpage}
+\usepackage{fancyhdr} %head % food
+\usepackage{lastpage} % # páginas
+\usepackage{graphicx} %imágenes
+\graphicspath{ {images/} }
+
 \pagestyle{fancy}
 \fancyhf{}
-\renewcommand{\headrulewidth}{2pt}
-\renewcommand{\footrulewidth}{1pt}
+% FORMATO TABLA
+\setlength{\arrayrulewidth}{0.1mm}
+\setlength{\tabcolsep}{18pt}
 
-%\rhead{academia.net.co}
-\chead{\begin{center}
-\begin{tabular}{ |c|c|c| } 
- \hline
- == & Área: Gestión Directiva & Versión 0.1 \\ 
- \hline
- == & Proceso: Consejo Académico & cell6 \\ 
- \hline
-\end{tabular}
-\end{center}}
-%\lhead{\acta{}}
 
+\renewcommand{\headrulewidth}{0pt} %línea separadora head
+\renewcommand{\footrulewidth}{1pt} %línea separadora foot
+
+%%%%%%%%%%%%%% ENCADEZADO %%%%%%%%%%%%%%%%%%%%%%%%%%
+\chead{
+         \begin{tabular}{ |c|} 
+         \hline
+         \includegraphics[scale=0.07]{LOGO.png}\\
+         \hline
+        \end{tabular}
+         \begin{tabular}{ |c|c|} 
+         \hline
+         Área: Gestión Directiva & Versión 0.1 \\ 
+         \hline
+         Proceso: Consejo Académico & Acta No. 08-0118 \\ 
+         \hline
+        \end{tabular}
+ }
+%\end{center}
+%\chead{academia.net.co}
+%\rchead{ %\begin{center}}
+
+
+
+%%%%%%%%%%%%%%%%% FOOT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \rfoot{Página \thepage \hspace{1pt} de \pageref{LastPage}}
 \lfoot{\textit{Carrera 28 No.10-45 - www.academia.net.co}}
 %Se define variable para ser usada en diferentes textos
-% \def \ar {ALEXANDER FABIÁN REDONDO FLÓREZ}
-\def \acta {ACTA No. 08-0118 CONSEJO ACADÉMICO}
-\setlength{\parindent}{0pt}
+\def \acta {ACTA No. 08-0118 CONSEJO ACADÉMICO} %Variable
+\setlength{\parindent}{0pt} %Quitar sangría
 
 %% preambulo %%
-\title{\acta{}}
+%\title{\acta{}}
 %\author{alexander.red }
-\date{Sincelejo - 6 de abril 2018}
+%\date{Sincelejo - 6 de abril 2018}
 
 %% Inicio de documento %%
 \begin{document}
+%\maketitle %impresión title
+\begin{center}
+\textbf{\acta{}} \\
+Sincelejo - 6 de abril 2018
+\end{center}
 
-\maketitle %impresión title
-
-\textbf{Lugar:} CENTRO EDUCATIVO ACADEMIA DE LAS AMÉRICAS – PUERTA ROJA \\
+\textbf{Lugar:} Academia de las Américas -Puerta Roja \\
 \textbf{Certificación de excusas:} Todos los miembros están presentes en la reunión. \\
 \textbf{Medio de comunicación:} Por medio de oficio por parte del Director.\\
-
+\textbf{Asistentes:} \input{miembrosCAcad.tex}.\\
 \section{Agenda de la Reunión}
 \begin{enumerate}
   \item Uso de la tecnologías de la información y comunicación en el aula (TIC).
@@ -105,6 +123,9 @@ Se diseñarán foros de literatura para desarrollarlos en plataforma. Las obras 
 \subsection{Revisión y aprobación del plan curricular del área de tecnología.} 
 \subsection{Uso de grupos de whatsapp.} 
 
+%Firmas
+\input{firmasCAcad.tex}
 %% Fin del documento %%
 \end{document}
+
 
